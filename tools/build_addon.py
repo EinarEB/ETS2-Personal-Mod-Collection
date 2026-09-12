@@ -18,12 +18,11 @@ import sys
 import zipfile
 
 
-VERSION = "1.0.1"
+VERSION = "Collection 1.0.1"
 MAX_DEFINITION_BYTES = 1024 * 1024
 MAX_ENTRIES = 100000
 HEADLIGHT_PATH = "unit/hookup/vehicle/flare/vehicle_high_beam.sii"
 ECONOMY_PATH = "def/economy_data.sii"
-USED_PATH = "def/used_vehicle_config.sii"
 EXPECTED_INCLUDES = (
     "vehicle_bulb_type_incandescent.sui",
     "vehicle_lights_scaling_distance_beam.sui",
@@ -323,7 +322,7 @@ def headlight(source, *, repair_existing=False):
     patched = replace_values(text, replacements, expected)
     if repair_existing:
         patched = text  # Validate but preserve all numeric spellings in existing repairs.
-    result = metadata("Headlight Flash Visibility Addon",
+    result = metadata("AI Headlight Flash Consequence - Dynamic Flares",
                       "Enlarges the existing high-beam flash flare visual. Requires Dynamic Flares "
                       "v1.2 enabled below this addon. This contains no AI behavior logic and does "
                       "not make drivers flash or react to headlights. Driving/VR quality is unverified.")
@@ -331,36 +330,18 @@ def headlight(source, *, repair_existing=False):
     return result
 
 
-def quper(source, *, preset="fleetguard"):
-    if preset not in ("fleetguard", "100percent"):
-        raise BuildError("Unknown Quper preset.")
+def quper(source):
     economy = source.read(ECONOMY_PATH)
     require_unit(economy, "economy_data", "economy.data.storage")
-    threshold = "0.8" if preset == "fleetguard" else "0.9999"
     times = {"maximum_driving_time": "1440", "sleeping_time": "480"}
-    thresholds = {"driver_undrivable_truck_integrity_wear": threshold,
-                  "driver_undrivable_trailer_integrity_wear": threshold}
-    result = metadata(f"Quper Overrides - {preset}",
+    thresholds = {"driver_undrivable_truck_integrity_wear": "0.8",
+                  "driver_undrivable_trailer_integrity_wear": "0.8"}
+    result = metadata("Quper Overrides",
                       "Requires the matching Quper source mod enabled below this addon. "
                       "Sets driving time to 1440 minutes and sleep to 480 minutes. "
-                      + ("Sets hired-driver integrity-wear thresholds to 0.8 and used-truck "
-                         "component wear ranges to zero. Existing trucks are not repaired."
-                         if preset == "fleetguard" else
-                         "Sets hired-driver integrity-wear thresholds to 0.9999; this is just "
-                         "below 100 percent, not exactly 100 percent. No used-truck override."))
+                      "Sets hired-driver truck and trailer integrity-wear thresholds to 0.8.")
     economy = replace_values(economy, times, times)
     result[ECONOMY_PATH] = insert_missing_values(economy, "economy_data", "economy.data.storage", thresholds)
-    if preset == "fleetguard":
-        used = source.read(USED_PATH)
-        require_unit(used, "used_vehicle_assortment_config", ".config")
-        expected = {f"truck_{component}_{wear}_{bound}":
-                    ("0.4" if wear == "wear_unfixable" and bound == "max" else "0.0")
-                    for component in ("chassis", "wheels", "engine", "transmission", "cabin")
-                    for wear in ("wear", "wear_unfixable") for bound in ("min", "max")}
-        # Validate every relevant range, but preserve existing zero spellings.
-        replace_values(used, expected, expected)
-        maxima = {key: "0.0" for key, value in expected.items() if value == "0.4"}
-        result[USED_PATH] = replace_values(used, maxima)
     return result
 
 
@@ -379,7 +360,7 @@ def write_new_archive(output, files):
         stream.write(data.getvalue())
 
 
-def build(command, source_path, output_path, *, preset="fleetguard", repair_existing=False):
+def build(command, source_path, output_path, *, repair_existing=False):
     source_path = Path(os.path.abspath(source_path))
     output_path = Path(os.path.abspath(output_path))
     check_no_links(source_path)
@@ -400,7 +381,7 @@ def build(command, source_path, output_path, *, preset="fleetguard", repair_exis
         raise BuildError("Repair mode is only available for headlight.")
     with Source(source_path, allow_single=command == "headlight") as source:
         files = (headlight(source, repair_existing=repair_existing) if command == "headlight"
-                 else quper(source, preset=preset))
+                 else quper(source))
     write_new_archive(output_path, files)
     return output_path
 
@@ -418,12 +399,9 @@ def main(argv=None):
             sub.add_argument("--repair-existing", action="store_true",
                              help="Repackage an existing 34 / 0.28 / 72 addon; dependency assets "
                                   "are supplied separately by Dynamic Flares")
-        else:
-            sub.add_argument("--preset", choices=("fleetguard", "100percent"), default="fleetguard")
     args = parser.parse_args(argv)
     try:
         output = build(args.command, args.source, args.output,
-                       preset=getattr(args, "preset", "fleetguard"),
                        repair_existing=getattr(args, "repair_existing", False))
     except (BuildError, OSError, zipfile.BadZipFile, NotImplementedError, RuntimeError) as exc:
         parser.exit(2, f"Build failed: {exc}\n")

@@ -51,7 +51,7 @@ def main():
         'Run `python tools/build_addon.py --help` from this folder. '
         'Choose a fresh output filename, then install the result manually.\n'
     ).encode()
-    name = 'ETS2_Personal_Addon_Builders_v1.0.0.zip'
+    name = 'ETS2_Personal_Addon_Builders_v1.0.1.zip'
     archive(output / name, builder_files)
     names.append(name)
     sums = ''.join(hashlib.sha256((output / name).read_bytes()).hexdigest() + '  ' + name + '\n' for name in sorted(names))

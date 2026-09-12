@@ -17,6 +17,7 @@ MODULE_PATH = Path(__file__).resolve().parents[1] / "tools" / "build_addon.py"
 SPEC = importlib.util.spec_from_file_location("build_addon", MODULE_PATH)
 builder = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(builder)
+USED_PATH = "def/used_vehicle_config.sii"
 
 
 def fixture_unit(kind, identifier, fields):
@@ -43,13 +44,9 @@ def headlight_files(repaired=False):
 
 def quper_files():
     economy = "maximum_driving_time: 1440 # keep comment\nsleeping_time: 480\nuntouched: 42"
-    used = "\n".join(f"truck_{part}_{wear}_{bound}: " +
-                     ("0.4" if wear == "wear_unfixable" and bound == "max" else "0.0") for part in (
-        "chassis", "wheels", "engine", "transmission", "cabin")
-        for wear in ("wear", "wear_unfixable") for bound in ("min", "max"))
-    used += "\ntruck_wear_unfixable_limit_values[]: 0.15\ntruck_count_min: 12"
+    used = "truck_cabin_wear_min: 0.1\ntruck_count_min: 12"
     return {builder.ECONOMY_PATH: fixture_unit("economy_data", "economy.data.storage", economy),
-            builder.USED_PATH: fixture_unit("used_vehicle_assortment_config", ".config", used)}
+            USED_PATH: fixture_unit("used_vehicle_assortment_config", ".config", used)}
 
 
 class BuilderTests(unittest.TestCase):
@@ -94,6 +91,8 @@ class BuilderTests(unittest.TestCase):
         self.assertEqual(set(actual), {"manifest.sii", "description.txt", builder.HEADLIGHT_PATH})
         self.assertEqual(self.source.read_bytes(), original_archive)
         self.assertIn("no AI behavior logic", actual["description.txt"])
+        self.assertIn('display_name: "AI Headlight Flash Consequence - Dynamic Flares"',
+                      actual["manifest.sii"])
 
     def test_regular_deterministic_stored_zip(self):
         self.zip_source(headlight_files())
@@ -113,48 +112,68 @@ class BuilderTests(unittest.TestCase):
                 raw = self.output.read_bytes()
                 local_flags = struct.unpack_from("<H", raw, info.header_offset + 6)[0]
                 self.assertEqual(local_flags & 8, 0)
-        self.assertIn('package_version: "1.0.1"', self.output_files()["manifest.sii"])
+        self.assertIn('package_version: "Collection 1.0.1"', self.output_files()["manifest.sii"])
         self.assertIn("mod_package : .package_name", self.output_files()["manifest.sii"])
 
-    def test_fleetguard_preserves_other_fields_and_comments(self):
+    def test_quper_adds_only_two_thresholds_and_preserves_other_fields(self):
         files = quper_files()
         self.zip_source(files)
+        original_archive = self.source.read_bytes()
         self.build("quper")
         actual = self.output_files()
         inserted = ("\t\tdriver_undrivable_truck_integrity_wear: 0.8\r\n"
                     "\t\tdriver_undrivable_trailer_integrity_wear: 0.8\r\n")
         expected_economy = files[builder.ECONOMY_PATH].replace("}\r\n}\r\n", inserted + "}\r\n}\r\n")
         self.assertEqual(actual[builder.ECONOMY_PATH], expected_economy)
-        self.assertEqual(actual[builder.USED_PATH], files[builder.USED_PATH].replace(": 0.4", ": 0.0"))
+        self.assertEqual(set(actual), {"manifest.sii", "description.txt", builder.ECONOMY_PATH})
+        self.assertNotIn(USED_PATH, actual)
+        self.assertEqual(self.source.read_bytes(), original_archive)
+        self.assertIn('display_name: "Quper Overrides"', actual["manifest.sii"])
 
     def test_existing_thresholds_replaced_and_duplicate_rejected(self):
         files = quper_files()
         files[builder.ECONOMY_PATH] = files[builder.ECONOMY_PATH].replace(
-            "untouched: 42", "untouched: 42\ndriver_undrivable_truck_integrity_wear: 0.5")
+            "untouched: 42", "untouched: 42\ndriver_undrivable_truck_integrity_wear: 0.5\n"
+            "driver_undrivable_trailer_integrity_wear: 0.9999")
         self.zip_source(files)
         self.build("quper")
         actual = self.output_files()[builder.ECONOMY_PATH]
-        self.assertEqual(actual.count("driver_undrivable_truck_integrity_wear:"), 1)
-        self.assertIn("driver_undrivable_truck_integrity_wear: 0.8", actual)
+        for kind in ("truck", "trailer"):
+            self.assertEqual(actual.count(f"driver_undrivable_{kind}_integrity_wear:"), 1)
+            self.assertIn(f"driver_undrivable_{kind}_integrity_wear: 0.8", actual)
         self.output.unlink()
         files[builder.ECONOMY_PATH] = files[builder.ECONOMY_PATH].replace(
             "untouched: 42", "driver_undrivable_truck_integrity_wear: 0.4")
         self.assert_rejected(files, "one numeric value", command="quper")
 
-    def test_unknown_used_wear_baseline_rejected(self):
+    def test_used_truck_source_is_never_parsed_or_bundled(self):
         files = quper_files()
-        files[builder.USED_PATH] = files[builder.USED_PATH].replace(
-            "truck_cabin_wear_min: 0.0", "truck_cabin_wear_min: 0.1")
-        self.assert_rejected(files, "baseline", command="quper")
-
-    def test_100percent_does_not_require_or_bundle_used_override(self):
-        files = quper_files()
-        del files[builder.USED_PATH]
+        files[USED_PATH] = "Unrelated used-truck source; intentionally not a definition."
         self.zip_source(files)
-        self.build("quper", preset="100percent")
+        self.build("quper")
+        self.assertEqual(set(self.output_files()),
+                         {"manifest.sii", "description.txt", builder.ECONOMY_PATH})
+
+    def test_quper_does_not_require_used_truck_source(self):
+        files = quper_files()
+        del files[USED_PATH]
+        self.zip_source(files)
+        self.build("quper")
         actual = self.output_files()
-        self.assertNotIn(builder.USED_PATH, actual)
-        self.assertEqual(actual[builder.ECONOMY_PATH].count(": 0.9999"), 2)
+        self.assertNotIn(USED_PATH, actual)
+        self.assertEqual(actual[builder.ECONOMY_PATH].count(": 0.8"), 2)
+
+    def test_quper_obsolete_preset_flags_are_rejected(self):
+        self.zip_source(quper_files())
+        for preset in ("fleetguard", "100percent"):
+            with self.subTest(preset=preset):
+                result = subprocess.run(
+                    [sys.executable, str(MODULE_PATH), "quper", "--source", str(self.source),
+                     "--output", str(self.output), "--preset", preset],
+                    capture_output=True, text=True)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn("unrecognized arguments: --preset", result.stderr)
+                self.assertFalse(self.output.exists())
 
     def test_missing_dependency_asset_rejected(self):
         files = headlight_files()
@@ -207,8 +226,8 @@ class BuilderTests(unittest.TestCase):
 
     def test_missing_quper_field_rejected(self):
         files = quper_files()
-        files[builder.USED_PATH] = files[builder.USED_PATH].replace(
-            "truck_cabin_wear_unfixable_max:", "other:")
+        files[builder.ECONOMY_PATH] = files[builder.ECONOMY_PATH].replace(
+            "maximum_driving_time:", "other:")
         self.assert_rejected(files, "one numeric value", command="quper")
 
     def test_output_never_overwritten(self):

@@ -1,6 +1,6 @@
 # Regional GPS Minimal 1.6.1
 
-A wider overhead navigation view with fewer map symbols and visible regional roads, city labels, and player marker. This packages the existing v1.6 tuning with a corrected manifest and archive metadata.
+A wider overhead navigation view with fewer map symbols and visible regional roads, city labels, and player marker.
 
 | Setting | Value |
 | --- | ---: |
@@ -17,4 +17,4 @@ The first two perspective GPS views and full world-map modes keep their source s
 
 The release includes `def/map_data.sii` and **152 city definition overrides** generated for an ETS2 1.60 official-map snapshot. It is a fixed snapshot, not an automatic patcher: it cannot discover additional DLC or adapt to a new map version at installation time. Cities absent from the snapshot retain whatever scale their winning definition provides. Custom maps may conflict because complete city definitions are replaced. Rebuild against the appropriate definitions after relevant game/map changes.
 
-Load above GPS, Route Advisor, map-data, and city-definition overrides. Disable earlier Regional GPS Minimal versions. The old machine-specific build report and outdated preview icon have been removed.
+Load above GPS, Route Advisor, map-data, and city-definition overrides. Disable earlier Regional GPS Minimal versions.
