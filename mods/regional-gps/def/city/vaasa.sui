@@ -1,0 +1,35 @@
+city_data : city.vaasa
+{
+	city_name: "Vaasa"
+	city_name_localized: "@@vaasa@@"
+	country: finland
+	population: 60000
+
+
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.346
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

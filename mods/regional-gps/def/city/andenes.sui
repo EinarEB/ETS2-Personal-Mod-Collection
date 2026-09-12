@@ -1,0 +1,35 @@
+city_data : city.andenes
+{
+	city_name: "Andenes"
+	city_name_localized: "@@andenes@@"
+	country: norway
+	population: 2700
+
+
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.316
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

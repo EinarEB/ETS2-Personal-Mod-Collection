@@ -1,0 +1,37 @@
+
+city_data : city.gedser
+{
+	city_name: "Gedser"
+	city_name_localized: "@@gedser@@"
+	country: denmark
+	population: 720
+
+
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.315
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -35
+	map_x_offsets[]: -36
+	map_x_offsets[]: -30
+	map_x_offsets[]: -29
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: -101
+	map_y_offsets[]: -64
+	map_y_offsets[]: -32
+	map_y_offsets[]: -25
+}
+

@@ -1,0 +1,82 @@
+
+city_data : city.kassel
+{
+	city_name: "Kassel"
+	city_name_localized: "@@kassel@@"
+	country: germany
+	population: 200000
+
+
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 0.420
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -120
+	map_x_offsets[]: 0
+	map_x_offsets[]: -31
+	map_x_offsets[]: -31
+	map_x_offsets[]: -32
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -90
+	map_y_offsets[]: -15
+	map_y_offsets[]: -5
+	map_y_offsets[]: -2
+	map_y_offsets[]: -5
+	map_y_offsets[]: 3
+
+	license_plate[]: .kassel.lp.car
+}
+
+license_plate_data : .kassel.lp.car
+{
+	type: car
+
+	templates[]: "KS033 122"
+
+	def0[]: "<offset hshift=4 vshift=-5><img src=/material/ui/lp/germany/b.mat color=FFFFFFFF><offset hshift=4 vshift=5>"
+
+	def1[]: "1"
+	def1[]: "2"
+	def1[]: "3"
+	def1[]: "4"
+	def1[]: "5"
+	def1[]: "6"
+	def1[]: "7"
+	def1[]: "9"
+
+	def2[]: "0"
+	def2[]: "1"
+	def2[]: "2"
+	def2[]: "3"
+	def2[]: "5"
+	def2[]: "7"
+	def2[]: "9"
+	def2[]: ""
+
+	def3[]: "B"
+	def3[]: "F"
+	def3[]: "G"
+	def3[]: "I"
+	def3[]: "J"
+	def3[]: "K"
+	def3[]: "M"
+	def3[]: "N"
+	def3[]: "O"
+	def3[]: "P"
+	def3[]: "R"
+	def3[]: "T"
+	def3[]: "U"
+	def3[]: "V"
+	def3[]: "W"
+	def3[]: "X"
+}

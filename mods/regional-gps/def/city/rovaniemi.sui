@@ -1,0 +1,37 @@
+city_data : city.rovaniemi
+{
+	city_name: "Rovaniemi"
+	city_name_localized: "@@rovaniemi@@"
+	country: finland
+	population: 60000
+
+
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.346
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+	city_pin_scale_factor[]: 0.825
+
+	vehicle_brands[]: "mercedes"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

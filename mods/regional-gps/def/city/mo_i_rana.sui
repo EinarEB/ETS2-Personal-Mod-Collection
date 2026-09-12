@@ -1,0 +1,35 @@
+city_data : city.mo_i_rana
+{
+	city_name: "Mo i Rana"
+	city_name_localized: "@@mo_i_rana@@"
+	country: norway
+	population: 20000
+
+
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.326
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

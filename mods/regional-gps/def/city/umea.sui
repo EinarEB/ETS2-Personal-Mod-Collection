@@ -1,0 +1,35 @@
+city_data : city.umea
+{
+	city_name: "Umeå"
+	city_name_localized: "@@umea@@"
+	country: sweden
+	population: 110000
+
+
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.373
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

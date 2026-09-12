@@ -1,0 +1,12 @@
+SiiNunit
+{
+mod_package : .package_name
+{
+    package_version: "1.6.1"
+    display_name: "Regional GPS Minimal"
+    author: "ETS2 Personal Mod Collection"
+    category[]: "ui"
+    description_file: "description.txt"
+    compatible_versions[]: "1.60.*"
+}
+}

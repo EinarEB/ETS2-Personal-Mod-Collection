@@ -1,0 +1,37 @@
+city_data : city.lillehammer
+{
+	city_name: "Lillehammer"
+	city_name_localized: "@@lillehammer@@"
+	country: norway
+	population: 26000
+
+
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.329
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.782
+	city_pin_scale_factor[]: 0.782
+
+	vehicle_brands[]: "volvo"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

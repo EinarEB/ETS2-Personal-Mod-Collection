@@ -1,0 +1,39 @@
+
+city_data : city.kobenhavn
+{
+	city_name: "København"
+	city_name_localized: "@@kobenhavn@@"
+	country: denmark
+	population: 600000
+
+
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 0.431
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 1.026
+	city_pin_scale_factor[]: 1.026
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -69
+	map_x_offsets[]: -67
+	map_x_offsets[]: -64
+	map_x_offsets[]: -100
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -41
+	map_y_offsets[]: -18
+	map_y_offsets[]: -18
+	map_y_offsets[]: -16
+
+	vehicle_brands[]: "iveco"
+}
+

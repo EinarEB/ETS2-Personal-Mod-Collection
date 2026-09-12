@@ -1,0 +1,37 @@
+city_data : city.trondheim
+{
+	city_name: "Trondheim"
+	city_name_localized: "@@trondheim@@"
+	country: norway
+	population: 190000
+
+
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.415
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.988
+	city_pin_scale_factor[]: 0.988
+
+	vehicle_brands[]: "daf"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

@@ -1,0 +1,38 @@
+
+city_data : city.rotterdam
+{
+	city_name: "Rotterdam"
+	city_name_localized: "@@rotterdam@@"
+	country: netherlands
+	population: 620000
+
+
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 0.431
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 1.027
+	city_pin_scale_factor[]: 1.027
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -30
+	map_x_offsets[]: -28
+	map_x_offsets[]: -45
+	map_x_offsets[]: -47
+	map_x_offsets[]: -46
+	map_x_offsets[]: -45
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 20
+	map_y_offsets[]: -5
+	map_y_offsets[]: -35
+	map_y_offsets[]: -27
+	map_y_offsets[]: -20
+	map_y_offsets[]: -25
+
+	vehicle_brands[]: "mercedes"
+}

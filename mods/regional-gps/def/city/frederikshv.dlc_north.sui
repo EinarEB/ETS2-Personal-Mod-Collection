@@ -1,0 +1,37 @@
+
+city_data : city.frederikshv
+{
+	city_name: "Frederikshavn"
+	city_name_localized: "@@frederikshavn@@"
+	country: denmark
+	population: 23000
+
+
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.327
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -54
+	map_x_offsets[]: -44
+	map_x_offsets[]: -39
+	map_x_offsets[]: -45
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: 70
+	map_y_offsets[]: 17
+	map_y_offsets[]: 7
+	map_y_offsets[]: 2
+}
+

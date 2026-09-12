@@ -1,0 +1,35 @@
+city_data : city.trieste
+{
+	city_name: "Trieste"
+	city_name_localized: "@@trieste@@"
+	country: italy
+	population: 200000
+
+
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 0.420
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+	city_pin_scale_factor[]: 1.000
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -27
+	map_y_offsets[]: -27
+	map_y_offsets[]: -27
+	map_y_offsets[]: -27
+}

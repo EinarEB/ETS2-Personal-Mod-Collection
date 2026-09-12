@@ -1,0 +1,35 @@
+city_data : city.kuusamo
+{
+	city_name: "Kuusamo"
+	city_name_localized: "@@kuusamo@@"
+	country: finland
+	population: 15000
+
+
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.323
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.769
+	city_pin_scale_factor[]: 0.769
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

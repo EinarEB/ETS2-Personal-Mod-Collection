@@ -1,0 +1,35 @@
+city_data : city.aarhus
+{
+	city_name: "Aarhus"
+	city_name_localized: "@@aarhus@@"
+	country: denmark
+	population: 290000
+
+
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 0.422
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 1.006
+	city_pin_scale_factor[]: 1.006
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

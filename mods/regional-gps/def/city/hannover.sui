@@ -1,0 +1,84 @@
+
+city_data : city.hannover
+{
+	city_name: "Hannover"
+	city_name_localized: "@@hannover@@"
+	country: germany
+	population: 530000
+
+
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 0.429
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 1.021
+	city_pin_scale_factor[]: 1.021
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -40
+	map_x_offsets[]: -36
+	map_x_offsets[]: -43
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: -54
+	map_y_offsets[]: -30
+	map_y_offsets[]: -12
+	map_y_offsets[]: 2
+
+	vehicle_brands[]: "scania"
+
+	license_plate[]: .hannover.lp.car
+}
+
+license_plate_data : .hannover.lp.car
+{
+	type: car
+
+	templates[]: "H033 1222"
+
+	def0[]: "<offset hshift=4 vshift=-5><img src=/material/ui/lp/germany/b.mat color=FFFFFFFF><offset hshift=4 vshift=5>"
+
+	def1[]: "1"
+	def1[]: "2"
+	def1[]: "3"
+	def1[]: "4"
+	def1[]: "5"
+	def1[]: "6"
+	def1[]: "7"
+	def1[]: "9"
+
+	def2[]: "0"
+	def2[]: "1"
+	def2[]: "2"
+	def2[]: "3"
+	def2[]: "5"
+	def2[]: "7"
+	def2[]: "9"
+	def2[]: ""
+
+	def3[]: "B"
+	def3[]: "F"
+	def3[]: "G"
+	def3[]: "I"
+	def3[]: "J"
+	def3[]: "K"
+	def3[]: "M"
+	def3[]: "N"
+	def3[]: "O"
+	def3[]: "P"
+	def3[]: "R"
+	def3[]: "T"
+	def3[]: "U"
+	def3[]: "V"
+	def3[]: "W"
+	def3[]: "X"
+}

@@ -1,0 +1,139 @@
+
+city_data : city.wroclaw
+{
+	city_name: "Wrocław"
+	city_name_localized: "@@wroclaw@@"
+	country: poland
+	population: 640000
+
+
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 0.432
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 1.028
+	city_pin_scale_factor[]: 1.028
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -39
+	map_x_offsets[]: -41
+	map_x_offsets[]: -35
+	map_x_offsets[]: -37
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: -19
+	map_y_offsets[]: -20
+	map_y_offsets[]: -28
+	map_y_offsets[]: -27
+
+	vehicle_brands[]: "volvo"
+
+	license_plate[]: .wroclaw.lp.car
+	license_plate[]: .wroclaw.lp.police
+}
+
+license_plate_data : .wroclaw.lp.car
+{
+	type: car
+
+	templates[]: "DW 01112"
+	templates[]: "DW 01122"
+	templates[]: "DWR 2111"
+	templates[]: "DWR 0122"
+
+	def0[]: "1"
+	def0[]: "2"
+	def0[]: "3"
+	def0[]: "4"
+	def0[]: "5"
+	def0[]: "6"
+	def0[]: "7"
+	def0[]: "8"
+	def0[]: "9"
+
+	def1[]: "0"
+	def1[]: "1"
+	def1[]: "2"
+	def1[]: "3"
+	def1[]: "4"
+	def1[]: "5"
+	def1[]: "6"
+	def1[]: "7"
+	def1[]: "8"
+	def1[]: "9"
+
+	def2[]: "A"
+	def2[]: "C"
+	def2[]: "E"
+	def2[]: "F"
+	def2[]: "G"
+	def2[]: "H"
+	def2[]: "J"
+	def2[]: "K"
+	def2[]: "L"
+	def2[]: "M"
+	def2[]: "N"
+	def2[]: "P"
+	def2[]: "R"
+	def2[]: "S"
+	def2[]: "T"
+	def2[]: "U"
+	def2[]: "V"
+}
+
+license_plate_data : .wroclaw.lp.police
+{
+	type: police
+
+	templates[]: "HPB 2111"
+	templates[]: "HPB 0122"
+
+	def0[]: "1"
+	def0[]: "2"
+	def0[]: "3"
+	def0[]: "4"
+	def0[]: "5"
+	def0[]: "6"
+	def0[]: "7"
+	def0[]: "8"
+	def0[]: "9"
+
+	def1[]: "0"
+	def1[]: "1"
+	def1[]: "2"
+	def1[]: "3"
+	def1[]: "4"
+	def1[]: "5"
+	def1[]: "6"
+	def1[]: "7"
+	def1[]: "8"
+	def1[]: "9"
+
+	def2[]: "A"
+	def2[]: "C"
+	def2[]: "E"
+	def2[]: "F"
+	def2[]: "G"
+	def2[]: "H"
+	def2[]: "J"
+	def2[]: "K"
+	def2[]: "L"
+	def2[]: "M"
+	def2[]: "N"
+	def2[]: "P"
+	def2[]: "R"
+	def2[]: "S"
+	def2[]: "T"
+	def2[]: "U"
+	def2[]: "V"
+}
+
+

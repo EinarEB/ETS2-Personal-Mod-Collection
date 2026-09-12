@@ -1,0 +1,37 @@
+city_data : city.kuopio
+{
+	city_name: "Kuopio"
+	city_name_localized: "@@kuopio@@"
+	country: finland
+	population: 120000
+
+
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.378
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.900
+	city_pin_scale_factor[]: 0.900
+
+	vehicle_brands[]: "iveco"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

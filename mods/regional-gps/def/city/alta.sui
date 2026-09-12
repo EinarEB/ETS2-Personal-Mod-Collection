@@ -1,0 +1,35 @@
+city_data : city.alta
+{
+	city_name: "Alta"
+	city_name_localized: "@@alta@@"
+	country: norway
+	population: 18500
+
+
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.325
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.773
+	city_pin_scale_factor[]: 0.773
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

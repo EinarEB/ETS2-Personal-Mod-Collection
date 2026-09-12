@@ -1,0 +1,37 @@
+
+city_data : city.aalborg
+{
+	city_name: "Aalborg"
+	city_name_localized: "@@aalborg@@"
+	country: denmark
+	population: 210000
+
+
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 0.420
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 1.001
+	city_pin_scale_factor[]: 1.001
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -38
+	map_x_offsets[]: -37
+	map_x_offsets[]: -31
+	map_x_offsets[]: -33
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: 28
+	map_y_offsets[]: 9
+	map_y_offsets[]: 1
+	map_y_offsets[]: 5
+}
+

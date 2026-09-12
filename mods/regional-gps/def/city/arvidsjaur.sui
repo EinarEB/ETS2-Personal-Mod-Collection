@@ -1,0 +1,35 @@
+city_data : city.arvidsjaur
+{
+	city_name: "Arvidsjaur"
+	city_name_localized: "@@arvidsjaur@@"
+	country: sweden
+	population: 4700
+
+
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.317
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

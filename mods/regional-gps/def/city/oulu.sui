@@ -1,0 +1,38 @@
+city_data : city.oulu
+{
+	city_name: "Oulu"
+	city_name_localized: "@@oulu@@"
+	country: finland
+	population: 130000
+	key_city: true
+
+
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.383
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.912
+	city_pin_scale_factor[]: 0.912
+
+	vehicle_brands[]: "scania"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

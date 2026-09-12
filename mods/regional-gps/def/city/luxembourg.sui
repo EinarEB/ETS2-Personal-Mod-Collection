@@ -1,0 +1,39 @@
+
+city_data : city.luxembourg
+{
+	city_name: "Luxembourg"
+	city_name_localized: "@@luxembourg_city@@"
+	country: luxembourg
+	population: 110000
+
+
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.373
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+	city_pin_scale_factor[]: 0.887
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -64
+	map_x_offsets[]: -61
+	map_x_offsets[]: -49
+	map_x_offsets[]: -52
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: -48
+	map_y_offsets[]: -58
+	map_y_offsets[]: -14
+	map_y_offsets[]: -26
+
+	vehicle_brands[]: "volvo"
+}
+

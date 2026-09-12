@@ -1,0 +1,35 @@
+city_data : city.gavle
+{
+	city_name: "Gävle"
+	city_name_localized: "@@gavle@@"
+	country: sweden
+	population: 100000
+
+
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.367
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.875
+	city_pin_scale_factor[]: 0.875
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

@@ -1,0 +1,36 @@
+
+city_data : city.venezia
+{
+	city_name: "Venezia"
+	city_name_localized: "@@venezia@@"
+	country: italy
+	population: 260000
+
+
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 0.422
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 1.004
+	city_pin_scale_factor[]: 1.004
+
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -36
+	map_x_offsets[]: -33
+	map_x_offsets[]: -36
+	map_x_offsets[]: -27
+
+	map_y_offsets[]: -30
+	map_y_offsets[]: -30
+	map_y_offsets[]: -30
+	map_y_offsets[]: -30
+	map_y_offsets[]: -104
+	map_y_offsets[]: -62
+	map_y_offsets[]: -27
+	map_y_offsets[]: -29
+}

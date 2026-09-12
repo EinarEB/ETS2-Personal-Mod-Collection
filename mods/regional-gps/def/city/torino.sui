@@ -1,0 +1,39 @@
+
+city_data : city.torino
+{
+	city_name: "Torino"
+	city_name_localized: "@@torino@@"
+	country: italy
+	population: 890000
+
+
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 0.439
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 1.044
+	city_pin_scale_factor[]: 1.044
+
+	map_x_offsets[]: -200
+	map_x_offsets[]: -150
+	map_x_offsets[]: -70
+	map_x_offsets[]: -30
+	map_x_offsets[]: -31
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 200
+	map_y_offsets[]: 100
+	map_y_offsets[]: 100
+	map_y_offsets[]: 0
+	map_y_offsets[]: -15
+	map_y_offsets[]: -16
+	map_y_offsets[]: -20
+	map_y_offsets[]: -28
+
+	vehicle_brands[]: "iveco"
+}
+

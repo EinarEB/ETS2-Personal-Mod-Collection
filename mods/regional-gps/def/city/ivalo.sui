@@ -1,0 +1,35 @@
+city_data : city.ivalo
+{
+	city_name: "Ivalo"
+	city_name_localized: "@@ivalo@@"
+	country: finland
+	population: 3000
+
+
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.317
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.754
+	city_pin_scale_factor[]: 0.754
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

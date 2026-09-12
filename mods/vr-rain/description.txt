@@ -1,0 +1,1 @@
+Sets the rain-streak material diffuse RGB to (0.10, 0.10, 0.10). A subtle appearance adjustment for VR; does not change rain probability, windshield simulation or wipers. Use above mods replacing the same rain material. Packaging and manifest repaired; no new visual validation.

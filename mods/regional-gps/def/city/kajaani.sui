@@ -1,0 +1,35 @@
+city_data : city.kajaani
+{
+	city_name: "Kajaani"
+	city_name_localized: "@@kajaani@@"
+	country: finland
+	population: 36000
+
+
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.334
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.795
+	city_pin_scale_factor[]: 0.795
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

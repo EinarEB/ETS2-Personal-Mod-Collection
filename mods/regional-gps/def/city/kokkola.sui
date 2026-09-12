@@ -1,0 +1,37 @@
+city_data : city.kokkola
+{
+	city_name: "Kokkola"
+	city_name_localized: "@@kokkola@@"
+	country: finland
+	population: 48000
+
+
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.340
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.810
+	city_pin_scale_factor[]: 0.810
+
+	vehicle_brands[]: "daf"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

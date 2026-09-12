@@ -1,0 +1,35 @@
+city_data : city.steinkjer
+{
+	city_name: "Steinkjer"
+	city_name_localized: "@@steinkjer@@"
+	country: norway
+	population: 21000
+
+
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.326
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

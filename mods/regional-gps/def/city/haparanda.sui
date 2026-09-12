@@ -1,0 +1,35 @@
+city_data : city.haparanda
+{
+	city_name: "Haparanda"
+	city_name_localized: "@@haparanda@@"
+	country: sweden
+	population: 4800
+
+
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.318
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+	city_pin_scale_factor[]: 0.756
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -70
+	map_x_offsets[]: -70
+	map_x_offsets[]: -70
+	map_x_offsets[]: -70
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

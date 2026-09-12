@@ -1,0 +1,37 @@
+
+city_data : city.esbjerg
+{
+	city_name: "Esbjerg"
+	city_name_localized: "@@esbjerg@@"
+	country: denmark
+	population: 116000
+
+
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.376
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.895
+	city_pin_scale_factor[]: 0.895
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -38
+	map_x_offsets[]: -33
+	map_x_offsets[]: -35
+	map_x_offsets[]: -36
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: -57
+	map_y_offsets[]: -32
+	map_y_offsets[]: -25
+	map_y_offsets[]: -28
+}
+

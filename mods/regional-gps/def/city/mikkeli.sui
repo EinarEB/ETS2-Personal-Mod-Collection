@@ -1,0 +1,35 @@
+city_data : city.mikkeli
+{
+	city_name: "Mikkeli"
+	city_name_localized: "@@mikkeli@@"
+	country: finland
+	population: 34000
+
+
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.333
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.792
+	city_pin_scale_factor[]: 0.792
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

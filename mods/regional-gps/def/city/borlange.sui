@@ -1,0 +1,37 @@
+city_data : city.borlange
+{
+	city_name: "Borlänge"
+	city_name_localized: "@@borlange@@"
+	country: sweden
+	population: 50000
+
+
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.341
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.812
+	city_pin_scale_factor[]: 0.812
+
+	vehicle_brands[]: "scania"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

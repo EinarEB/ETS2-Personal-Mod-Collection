@@ -1,0 +1,40 @@
+
+city_data : city.brussel
+{
+	city_name: "Brussel"
+	city_name_localized: "@@brussel@@"
+	country: belgium
+	population: 1200000
+
+
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 0.447
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 1.064
+	city_pin_scale_factor[]: 1.064
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -10
+	map_x_offsets[]: -33
+	map_x_offsets[]: -34
+	map_x_offsets[]: -33
+	map_x_offsets[]: -33
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 25
+	map_y_offsets[]: -28
+	map_y_offsets[]: 31
+	map_y_offsets[]: 11
+	map_y_offsets[]: 2
+	map_y_offsets[]: 3
+
+	vehicle_brands[]: "iveco"
+
+}
+

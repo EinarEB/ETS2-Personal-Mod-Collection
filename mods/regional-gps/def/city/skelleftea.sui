@@ -1,0 +1,35 @@
+city_data : city.skelleftea
+{
+	city_name: "Skellefteå"
+	city_name_localized: "@@skelleftea@@"
+	country: sweden
+	population: 70000
+
+
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.352
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.838
+	city_pin_scale_factor[]: 0.838
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

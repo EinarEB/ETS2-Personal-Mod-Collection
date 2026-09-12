@@ -1,0 +1,35 @@
+city_data : city.karesuando
+{
+	city_name: "Karesuando"
+	city_name_localized: "@@karesuando@@"
+	country: sweden
+	population: 470
+
+
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.315
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

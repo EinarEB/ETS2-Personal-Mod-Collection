@@ -1,0 +1,37 @@
+city_data : city.narvik
+{
+	city_name: "Narvik"
+	city_name_localized: "@@narvik@@"
+	country: norway
+	population: 20000
+
+
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.326
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+	city_pin_scale_factor[]: 0.775
+
+	vehicle_brands[]: "volvo"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

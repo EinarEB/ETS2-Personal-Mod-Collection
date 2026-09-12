@@ -1,0 +1,38 @@
+
+city_data : city.amsterdam
+{
+	city_name: "Amsterdam"
+	city_name_localized: "@@amsterdam@@"
+	country: netherlands
+	population: 820000
+
+
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 0.437
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 1.040
+	city_pin_scale_factor[]: 1.040
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -20
+	map_x_offsets[]: -28
+	map_x_offsets[]: -31
+	map_x_offsets[]: -26
+	map_x_offsets[]: -43
+	map_x_offsets[]: -45
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -10
+	map_y_offsets[]: -5
+	map_y_offsets[]: -47
+	map_y_offsets[]: -46
+	map_y_offsets[]: -25
+	map_y_offsets[]: -25
+
+	vehicle_brands[]: "daf"
+}

@@ -1,0 +1,35 @@
+city_data : city.honningsvag
+{
+	city_name: "Honningsvåg"
+	city_name_localized: "@@honningsvag@@"
+	country: norway
+	population: 2500
+
+
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.316
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+	city_pin_scale_factor[]: 0.753
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+	map_x_offsets[]: -60
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

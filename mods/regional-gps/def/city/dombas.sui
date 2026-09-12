@@ -1,0 +1,35 @@
+city_data : city.dombas
+{
+	city_name: "Dombås"
+	city_name_localized: "@@dombas@@"
+	country: norway
+	population: 1200
+
+
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.316
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+	city_pin_scale_factor[]: 0.751
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

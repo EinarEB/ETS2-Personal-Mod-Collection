@@ -1,0 +1,37 @@
+city_data : city.lulea
+{
+	city_name: "Luleå"
+	city_name_localized: "@@lulea@@"
+	country: sweden
+	population: 73000
+
+
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.353
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.841
+	city_pin_scale_factor[]: 0.841
+
+	vehicle_brands[]: "mercedes"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+	map_x_offsets[]: -25
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

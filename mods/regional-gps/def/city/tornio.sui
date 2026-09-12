@@ -1,0 +1,35 @@
+city_data : city.tornio
+{
+	city_name: "Tornio"
+	city_name_localized: "@@tornio@@"
+	country: finland
+	population: 21000
+
+
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.326
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+	city_pin_scale_factor[]: 0.776
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 5
+	map_x_offsets[]: 5
+	map_x_offsets[]: 5
+	map_x_offsets[]: 5
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -13
+	map_y_offsets[]: -13
+	map_y_offsets[]: -13
+	map_y_offsets[]: -13
+}

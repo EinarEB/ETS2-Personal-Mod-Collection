@@ -1,0 +1,35 @@
+city_data : city.kiruna
+{
+	city_name: "Kiruna"
+	city_name_localized: "@@kiruna@@"
+	country: sweden
+	population: 23000
+
+
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.327
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+	map_x_offsets[]: -30
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

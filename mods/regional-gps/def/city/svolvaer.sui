@@ -1,0 +1,35 @@
+city_data : city.svolvaer
+{
+	city_name: "Svolvær"
+	city_name_localized: "@@svolvaer@@"
+	country: norway
+	population: 2000
+
+
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.316
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.752
+	city_pin_scale_factor[]: 0.752
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

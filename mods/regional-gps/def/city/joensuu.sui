@@ -1,0 +1,37 @@
+city_data : city.joensuu
+{
+	city_name: "Joensuu"
+	city_name_localized: "@@joensuu@@"
+	country: finland
+	population: 77000
+
+
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.355
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.846
+	city_pin_scale_factor[]: 0.846
+
+	vehicle_brands[]: "volvo"
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+	map_x_offsets[]: -40
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}

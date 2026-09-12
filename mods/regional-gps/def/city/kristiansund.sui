@@ -1,0 +1,35 @@
+city_data : city.kristiansund
+{
+	city_name: "Kristiansund"
+	city_name_localized: "@@kristiansund@@"
+	country: norway
+	population: 23000
+
+
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.327
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+	city_pin_scale_factor[]: 0.779
+
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: 0
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+	map_x_offsets[]: -50
+
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: 0
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+	map_y_offsets[]: -26
+}
